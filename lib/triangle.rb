@@ -14,8 +14,7 @@ end
     
         if side_one == side_two && side_two == side_three
         :equilateral
-       elsif side_one == side_two 
-       || side_two = side_three 
+       elsif side_one == side_two || side_two == side_three 
          :isosceles
         else
           :scalene
