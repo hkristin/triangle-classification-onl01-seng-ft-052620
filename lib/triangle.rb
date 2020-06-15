@@ -1,6 +1,6 @@
 class Triangle
   class TriangleError < StandardError
-  
+end
   attr_accessor :side_one, :side_two, :side_three
   
   def initialize(side_one, side_two, side_three)
@@ -28,7 +28,6 @@ class Triangle
     [side_one, side_two, side_three].each do |side|
       if side <= 0
       triangle << false 
-   
     end
     raise TriangleError 
       if triangle.include?(false)
@@ -36,4 +35,4 @@ class Triangle
   end
 end
 end
-end
+
