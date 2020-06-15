@@ -19,6 +19,9 @@ end
         else
           :scalene
      end
+   else 
+     raise TriangleError
+   end
     end
   
   def valid_triangle?
